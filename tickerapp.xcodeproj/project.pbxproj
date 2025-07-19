@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8B8E83902E2B6C2700BDB58C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8B8E838F2E2B6C2700BDB58C /* SnapKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		8B8E83622E2B653200BDB58C /* tickerapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tickerapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8E83902E2B6C2700BDB58C /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = tickerapp;
 			packageProductDependencies = (
+				8B8E838F2E2B6C2700BDB58C /* SnapKit */,
 			);
 			productName = tickerapp;
 			productReference = 8B8E83622E2B653200BDB58C /* tickerapp.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = 8B8E83592E2B653100BDB58C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8B8E838E2E2B6C2700BDB58C /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8B8E83632E2B653200BDB58C /* Products */;
 			projectDirPath = "";
@@ -148,11 +157,12 @@
 				DEVELOPMENT_TEAM = 847S254GLW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = tickerapp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ticker App";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -176,11 +186,12 @@
 				DEVELOPMENT_TEAM = 847S254GLW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = tickerapp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ticker App";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8B8E838E2E2B6C2700BDB58C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8B8E838F2E2B6C2700BDB58C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B8E838E2E2B6C2700BDB58C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8B8E835A2E2B653100BDB58C /* Project object */;
 }
